@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercice1 formulaire JS </title>
+</head>
+
+<body>
+
+
+    <form class="form" id="signupForm">
+            <div>
+                <input class="form__input" type="text" name="nom" id="nom" placeholder="Nom">
+                <label class="error-message" for="firstName" id="firstNameError">Veuillez renseigner votre Nom.</label>
+            </div>
+            <div>
+                <input class="form__input" type="email" name="email" id="email" placeholder="Email address">
+                <label class="error-message" for="email" id="emailError">Veuillez renseigner un email valide.</label>
+            </div>
+            <div>
+                <input class="form__input" type="tel" name="phone" id="phone" placeholder="Phone number">
+                <label class="error-message" for="phone" id="phoneError">numéro de téléphone invalide.</label>
+            </div>
+            <div>
+                <input class="form__input" type="password" name="password" id="password" placeholder="Password">
+                <label class="error-message" for="lastName" id="lastNameError">Veuillez saisir votre mot de
+                    passe.</label>
+            </div>
+        </div>
+        
+        <button class="form__submit form__button" type="submit">Envoyer</button>
+        <button class="form__reset form__button" type="reset">Reset</button>
+    </form>
+
+
+
+
+
+
+    <script src="./formulaire.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

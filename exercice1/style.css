@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form {
+    margin : 20px;
+    padding: 15px;
+    display: flex;
+    background-color: cadetblue;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+}
+
+.form__input {
+
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+    padding: 8px 16px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: none;
+    flex: 1;
+    max-height: 37px;
+}
+
+.error-message {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
+.form__button{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+padding : 5px;
+margin : 5px ;
+width: 100px;
+}
+
+.form__submit{
+
+
+}
+.form__reset{
+
+}
