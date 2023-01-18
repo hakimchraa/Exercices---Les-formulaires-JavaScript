@@ -5,38 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Exercice1 formulaire JS </title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Exercice1_formulaire_JS </title>
 </head>
 
 <body>
 
 
     <form class="form" id="signupForm">
+        <fieldset class="form__group">
+            <legend>SIGNUP FORMULAIRE</legend>
+
             <div>
                 <input class="form__input" type="text" name="nom" id="nom" placeholder="Nom">
-                <label class="error-message" for="firstName" id="firstNameError">Veuillez renseigner votre Nom.</label>
+                <label class="error-message" for="nom" id="nameError"><p>Veuillez renseigner votre Nom.</p></label>
             </div>
+
             <div>
                 <input class="form__input" type="email" name="email" id="email" placeholder="Email address">
-                <label class="error-message" for="email" id="emailError">Veuillez renseigner un email valide.</label>
+                <label class="error-message" for="email" id="emailError"><p>Veuillez renseigner un email valide.</p></label>
             </div>
+
             <div>
                 <input class="form__input" type="tel" name="phone" id="phone" placeholder="Phone number">
-                <label class="error-message" for="phone" id="phoneError">numéro de téléphone invalide.</label>
+                <label class="error-message" for="phone" id="phoneError"><p>numéro de téléphone invalide.</p></label>
             </div>
-            <div>
+
+            <div class="password_fiels">
                 <input class="form__input" type="password" name="password" id="password" placeholder="Password">
-                <label class="error-message" for="lastName" id="lastNameError">Veuillez saisir votre mot de
-                    passe.</label>
+                <label class="error-message" for="password" id="passwordError">
+                    <p> Veuillez saisir votre mot de passe <br> 8 caracteres minimum <br> lettre & chiffre & caractére
+                        special</p>
+                </label>
             </div>
-        </div>
-        
-        <button class="form__submit form__button" type="submit">Envoyer</button>
-        <button class="form__reset form__button" type="reset">Reset</button>
+
+            <button class="form__submit form__button" type="submit">Envoyer</button>
+            <button class="form__reset form__button" type="reset">Reset</button>
+        </fieldset>
     </form>
-
-
 
 
 

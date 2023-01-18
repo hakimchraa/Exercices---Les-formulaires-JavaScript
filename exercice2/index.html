@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercice2_formulaire_JS</title>
+</head>
+
+<body>
+    <form class="mainform" action="#" method="get" id="command_form">
+        <address class="mainform_coordonnee">
+            <label for="nom">Votre Nom<input type="text" name="nom" id="nom"></label>
+            <label for="adresse">addresse<input type="text" name="adresse" id="adresse"></label>
+            <label for="tel">tel<input type="tel" name="tel" id="tel"></label>
+        </address>
+        <div class="mainform__taille-pizza">
+            <label for="petite">petite<input type="radio" name="taille" value="petite" checked> </label>
+            <label for="moyenne">moyenne<input type="radio" name="taille" value="moyenne"></label>
+            <label for="grande">grande<input type="radio" name="taille" value="grande"></label>
+        </div>
+
+        <div class="mainform__ingredient">
+            <label for="olive">olive</label><input type="checkbox" name="ingredient" id="olive" value="olive">
+            <label for="poivron">poivron</label><input type="checkbox" name="ingredient" id="poivron" value="poivron">
+            <label for="ognion">ognion</label><input type="checkbox" name="ingredient" id="ognion" value="ognion">
+        </div>
+    </form>
+</body>
+
+</html>

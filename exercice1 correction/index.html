@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Créez un formulaire HTML avec les champs suivants: nom, adresse électronique, numéro de téléphone et mot de passe. Assurez-vous d'utiliser les types appropriés pour chaque champ (par exemple, "email" pour l'adresse électronique). -->
+
+    <form class="form" id="form">
+        <div class="form__section">
+            <label id="nameError" data-error="false" data-message="Veuillez renseigner votre nom complet." class="form__label">
+                <input class="form__input" type="text" name="name" id="nameInput" placeholder="Entrez votre nom complet..">
+            </label>
+            <label id="emailError" data-error="false" data-message="Veuillez renseigner un email valide." class="form__label">
+                <input class="form__input" type="email" name="email" id="emailInput" placeholder="Entrez votre adresse email..">
+            </label>
+        </div>
+        <div class="form__section">
+            <label id="phoneError" data-error="false" data-message="Veuillez renseigner un numéro de téléphone valide."  class="form__label">
+                <input class="form__input" type="tel" name="phone" id="phoneInput" placeholder="Entrez votre numéro de téléphone..">
+            </label>
+            <label id="passwordError" data-error="false" data-message="Veuillez renseigner un mot de passe valide."  class="form__label">
+                <input class="form__input" type="password" name="password" id="passwordInput" placeholder="Entrez un mot de passe..">
+            </label>
+        </div>
+        <button class="form__submit" type="submit">Submit</button>
+    </form>
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
